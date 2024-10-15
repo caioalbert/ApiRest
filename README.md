@@ -1,0 +1,8 @@
+Api Rest em Desenvolvimento
+
+COMANDO PARA CRIAR O BANCO DE DADOS BASEADO NO SCHEMA
+npx prisma db push
+
+PARA VISUALIZAR A CRIAÇÃO DAS TABELAS SEM A NECESSIDADE DE ABRIR O MONGO FB
+
+npx prisma studio
