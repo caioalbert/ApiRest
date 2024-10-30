@@ -11,5 +11,8 @@
       "src": "/(.*)",
       "dest": "server.js"
     }
-  ]
+  ],
+  "env": {
+    "DATABASE_URL": "mongodb+srv://caio:W0jZ1AlgJTVSsugV@users.pawwf.mongodb.net/Users?retryWrites=true&w=majority&appName=Users"
+  }
 }
