@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
-    "build": "npm install && prisma generate",
+    "build": "prisma generate && echo 'Build completed",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,6 +14,7 @@
   "description": "",
   "dependencies": {
     "@prisma/client": "^5.20.0",
+    "prisma": "^5.20.0",
     "express": "^4.21.1"
   },
   "devDependencies": {
