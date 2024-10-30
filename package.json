@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "build": "prisma generate && echo 'Build completed",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "prisma generate"
   },
   "keywords": [],
   "author": "",
