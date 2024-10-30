@@ -11,9 +11,13 @@ app.use(express.json());
 // Rota GET para o endpoint principal
 app.get('/usuarios', async (req, res) => {
 
-   const users = await prisma.user.findMany()
-
-    res.status(200).json(users)
+    try {
+        const users = await prisma.user.findMany();
+        res.status(200).json(users);
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: 'Erro ao buscar usuários' });
+    }
 });
 
 // Rota POST para adicionar um novo usuário
